@@ -1,0 +1,285 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+    color: #333;
+    font-weight: 700;
+}
+
+p {
+    color: #666;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #645435;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header h1 span {
+    color: #e74c3c;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    color: #e74c3c;
+}
+
+/* Intro Section */
+#intro {
+    background-color: #ecf0f1;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#intro h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+#intro p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #7f8c8d;
+}
+
+/* Services Section */
+#services {
+    background-color: white;
+    padding: 60px 0;
+}
+
+#services h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+    color: #2c3e50;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.service {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: calc(33.333% - 40px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+}
+
+.service h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #e74c3c;
+}
+
+.service p {
+    font-size: 16px;
+    color: #7f8c8d;
+}
+
+/* About Section */
+#about {
+    background-color: #ecf0f1;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+#about ul {
+    list-style: none;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#about ul li {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+/* Portfolio Section */
+#portfolio {
+    background-color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#portfolio h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+#portfolio p {
+    font-size: 18px;
+    color: #7f8c8d;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+#portfolio .btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#portfolio .btn:hover {
+    background-color: #c0392b;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #ecf0f1;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+#contact p {
+    font-size: 18px;
+    color: #7f8c8d;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+#contact .btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact .btn:hover {
+    background-color: #c0392b;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #e74c3c;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .service {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .service {
+        width: 100%;
+    }
+
+    header nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    #intro h2 {
+        font-size: 24px;
+    }
+
+    #services h2, #about h2, #portfolio h2, #contact h2 {
+        font-size: 26px;
+    }
+}

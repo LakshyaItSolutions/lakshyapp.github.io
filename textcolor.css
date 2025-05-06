@@ -1,0 +1,28 @@
+.custom{
+    color:aliceblue;
+}
+.photo{
+    display:flex;    
+    justify-content: center;
+}
+.button{
+    background-color: brown;
+    border-radius: 10px;
+    color:bisque;
+    border: 0px;
+}
+.newnav{
+    background-color: #ce4340;
+    color:azure;
+}
+.logo{
+    color:rgb(245, 171, 118);
+    
+    font-size: 4vmin;
+    font-weight: 400;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    
+}
+.sticky{
+    
+}

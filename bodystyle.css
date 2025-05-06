@@ -1,0 +1,68 @@
+body{
+    
+    text-align: center;
+    background-color: burlywood;
+    color: chocolate;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.button{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border:none;
+    font-size: 8vmin;
+    color:chocolate;
+    
+}
+.container{
+    height:70vh;
+    display:flex;
+    
+    justify-content: center;
+    justify-items: center;
+
+    
+}
+.game{
+    height:60vmin;
+    width:60vmin;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+gap:1.5vmin;
+}
+
+.reset{
+    height:8vmin;
+    width:16vmin;
+    font-size: 4vmin;
+    border:none;
+    background-color: rgb(53, 4, 4);
+    color: chocolate;
+    border-radius: 1rem;
+}
+.win{
+font-size: 7em;
+display:none;
+
+animation-name: colorchange;
+
+animation-duration: 3s;
+animation-fill-mode: forwards;
+animation-delay: 2s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in;
+animation-direction: normal;
+
+
+}
+@keyframes colorchange{
+    from{color:red;
+trnsform:translateX(-200) ;    
+    }
+    to{color:blue;
+        trnsform:translateX(200) ; 
+
+    };
+}
